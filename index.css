@@ -4,6 +4,7 @@ body {
     padding: 0;
     max-width: 550px;
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
 }
 
 /* HEADER */
@@ -13,6 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: .5rem;
+    background-color: #FFFFFF;
 }
 
 .header-icon {
