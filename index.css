@@ -1,4 +1,28 @@
 body {
     margin: 0;
     padding: 0;
+    max-width: 550px;
+    outline: 1px solid red;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header-icon {
+    width: 10%;
+}
+
+.header-icon img {
+    width: 100%;
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo img {
+    width: 100%;
 }
