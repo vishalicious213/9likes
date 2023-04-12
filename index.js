@@ -11,7 +11,8 @@ function renderCat() {
 
     catSection.innerHTML += `
         <div class="cat-profile">
-
+            <h2>${cats[0].name}, ${cats[0].age}</h2>
+            <p>${cats[0].bio}</p>
         </div>
     `
 }
