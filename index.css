@@ -1,6 +1,6 @@
 body {
     outline: 1px solid red;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     max-width: 550px;
 }
@@ -31,19 +31,14 @@ header {
 
 /* MAIN SECTION */
 
-.cat-profile {
+#cat {
     width: 98%;
-    margin: 0 auto;
-}
-
-.profile-img {
-    outline: 1px solid orange;
     height: 80vh;
-}
-
-.profile-img img {
-    width: 100%;
+    margin: 0 auto;
     border-radius: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* FOOTER */

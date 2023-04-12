@@ -11,7 +11,7 @@ function renderCat() {
 
     catSection.innerHTML += `
         <div class="cat-profile">
-            <div class="profile-img"></div>
+
         </div>
     `
 }
