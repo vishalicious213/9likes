@@ -29,6 +29,23 @@ header {
     width: 100%;
 }
 
+/* MAIN SECTION */
+
+.cat-profile {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.profile-img {
+    outline: 1px solid orange;
+    height: 80vh;
+}
+
+.profile-img img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
 /* FOOTER */
 
 footer {
