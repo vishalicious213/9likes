@@ -1,9 +1,11 @@
 body {
+    outline: 1px solid red;
     margin: 0;
     padding: 0;
     max-width: 550px;
-    outline: 1px solid red;
 }
+
+/* HEADER */
 
 header {
     display: flex;
@@ -25,4 +27,25 @@ header {
 
 .logo img {
     width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon {
+    /* outline: 1px solid red; */
+    display: flex;
+    margin: .5rem;
+    padding: 1rem;
+    width: 10%;
+    border-radius: 50%;
+}
+
+.footer-icon img {
+    width: 100%;
+    /* outline: 1px solid orange; */
 }
