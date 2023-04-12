@@ -24,3 +24,5 @@ const cats = [
         hasBeenLiked: false
     }
 ]
+
+export default cats
