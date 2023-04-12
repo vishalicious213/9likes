@@ -83,3 +83,11 @@ footer {
     /* outline: 1px solid orange; */
     width: 100%;
 }
+
+.cross:hover {
+    background: #FFE7EF;
+}
+
+.heart:hover {
+    background: #DBFFF4;
+}
