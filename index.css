@@ -74,8 +74,9 @@ footer {
     display: flex;
     margin: .5rem;
     padding: 1rem;
-    width: 10%;
+    width: 6%;
     border-radius: 50%;
+    box-shadow: 0px 10px 20px #EDD9DF;
 }
 
 .footer-icon img {
