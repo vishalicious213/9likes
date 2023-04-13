@@ -5,16 +5,26 @@ const catSection = document.getElementById("cat")
 
 // ⬇️ RENDER THE APP ⬇️
 
-function renderCat() {
+function renderCat(index) {
     catSection.innerHTML = ""
-    catSection.style.backgroundImage = `url(${cats[0].avatar})`
+    catSection.style.backgroundImage = `url(${cats[index].avatar})`
 
     catSection.innerHTML += `
         <div class="cat-profile">
-            <h2>${cats[0].name}, ${cats[0].age}</h2>
-            <p>${cats[0].bio}</p>
+            <h2>${cats[index].name}, ${cats[index].age}</h2>
+            <p>${cats[index].bio}</p>
         </div>
     `
 }
 
-renderCat()
+// renderCat()
+
+function renderApp() {
+    for (let i = 0; i < cats.length; i++) {
+        if (cats[i].hasBeenSwiped === false) {
+            renderCat(i)
+        }
+    }
+}
+
+renderApp()
