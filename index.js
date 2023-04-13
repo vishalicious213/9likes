@@ -19,10 +19,11 @@ function renderCat(index) {
 
 function renderSplashPage() {
     catSection.innerHTML = ""
+    let randomNumber = Math.floor(Math.random() * 9) + 1
 
     catSection.innerHTML += `
         <div id="splash">
-            <img src="/images/logo/1.png">
+            <img src="/images/logo/${randomNumber}.png">
         </div>
     `
 }
