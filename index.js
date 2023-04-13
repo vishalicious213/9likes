@@ -26,6 +26,8 @@ function renderSplashPage() {
             <img src="/images/logo/${randomNumber}.png">
         </div>
     `
+
+    setTimeout(renderApp, 1500)
 }
 
 function renderApp() {
