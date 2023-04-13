@@ -45,6 +45,14 @@ header {
     align-items: end;
 }
 
+#splash {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cat-profile {
     width: 100%;
     padding: .5rem 0 .5rem 1rem;
