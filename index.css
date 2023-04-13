@@ -53,6 +53,10 @@ header {
     align-items: center;
 }
 
+#splash img {
+    width: 100%;
+}
+
 .cat-profile {
     width: 100%;
     padding: .5rem 0 .5rem 1rem;
