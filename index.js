@@ -17,7 +17,15 @@ function renderCat(index) {
     `
 }
 
-// renderCat()
+function renderSplashPage() {
+    catSection.innerHTML = ""
+
+    catSection.innerHTML += `
+        <div id="splash">
+            <img src="/images/logo/1.png">
+        </div>
+    `
+}
 
 function renderApp() {
     for (let i = 0; i < cats.length; i++) {
@@ -27,4 +35,6 @@ function renderApp() {
     }
 }
 
-renderApp()
+// renderApp()
+
+renderSplashPage()
