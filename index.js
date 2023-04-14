@@ -25,14 +25,23 @@ pass.addEventListener("click", function() {
 function clickedLike() {
     currentCat.liked()
     console.log(currentCat)
+    catIndex ++
+    getCurrentCat()
 }
 
 function clickedPass() {
     currentCat.passed()
     console.log(currentCat)
+    catIndex ++
+    getCurrentCat()
 }
 
 // ⬇️ RENDER THE APP ⬇️
+
+function getCurrentCat() {
+    currentCat = new Cat(cats[catIndex])
+    renderCat(currentCat)
+}
 
 function renderCat(catData) {
     catSection.innerHTML = ""
