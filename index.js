@@ -31,7 +31,7 @@ function clickedPass() {
     getNewCat()
 }
 
-// ⬇️ RENDER THE APP ⬇️
+// ⬇️ HELPER FUNCTIONS ⬇️
 
 function getNewCat() {
     if (catIndex + 1 === cats.length) {
@@ -42,6 +42,8 @@ function getNewCat() {
         renderCat(currentCat)
     }
 }
+
+// ⬇️ RENDER THE APP ⬇️
 
 function renderEnd() {
     const header = document.getElementById("header")
@@ -76,10 +78,6 @@ function renderApp() {
     if (!currentCat.hasBeenSwiped) {
         renderCat(currentCat)
     }
-
-    // if (catIndex > cats.length) {
-    //     console.log("END OF CATS")
-    // }
 }
 
 // render the splash page and then load the app
