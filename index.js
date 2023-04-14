@@ -70,13 +70,17 @@ function renderEnd() {
 function renderStamp(stamp) {
     if (stamp === 1) {
         catSection.innerHTML += `
-            <div id="stamp">LIKED</div>
+            <div id="stamp">
+                <img src="/images/badge-like.png">
+            </div>
         `
     }
 
     if (stamp === 0) {
         catSection.innerHTML += `
-            <div id="stamp">PASSED</div>
+        <div id="stamp">
+            <img src="/images/badge-nope.png">
+        </div>
         `
     }
 

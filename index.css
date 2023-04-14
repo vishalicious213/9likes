@@ -93,6 +93,10 @@ header {
     display: flex;
 }
 
+#stamp img {
+    width: 50%;
+}
+
 /* FOOTER */
 
 footer {
