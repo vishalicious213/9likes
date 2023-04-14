@@ -36,7 +36,6 @@ function clickedPass() {
 // ⬇️ RENDER THE APP ⬇️
 
 function getNewCat() {
-    console.log(catIndex + 1, cats.length)
     if (catIndex + 1 === cats.length) {
         console.log("END OF CATS")
         setTimeout(renderEnd, 1500)
@@ -48,7 +47,13 @@ function getNewCat() {
 }
 
 function renderEnd() {
+    const header = document.getElementById("header")
+    const footer = document.getElementById("footer")
     catSection.innerHTML = ""
+    catSection.style.backgroundColor = "white"
+
+    header.innerHTML = ""
+    footer.innerHTML = ""
 
     catSection.innerHTML += `
         <div class="no-cats">
