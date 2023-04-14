@@ -5,3 +5,4 @@ This is my implementation of the Scrimba solo project for Module 7 of the Fronte
 ## Customizations
 
 - Added splash screen that cycles through 9 app logo images
+- Added breed to cats data
