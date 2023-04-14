@@ -22,14 +22,12 @@ pass.addEventListener("click", function() {
 
 function clickedLike() {
     currentCat.liked()
-    console.log(currentCat)
     getNewCat()
 
 }
 
 function clickedPass() {
     currentCat.passed()
-    console.log(currentCat)
     getNewCat()
 }
 
@@ -37,7 +35,6 @@ function clickedPass() {
 
 function getNewCat() {
     if (catIndex + 1 === cats.length) {
-        console.log("END OF CATS")
         setTimeout(renderEnd, 1500)
     } else {
         catIndex ++
