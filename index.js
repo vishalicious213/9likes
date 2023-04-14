@@ -22,17 +22,20 @@ pass.addEventListener("click", function() {
 
 function clickedLike() {
     currentCat.liked()
-    getNewCat()
+    renderStamp()
+    // getNewCat()
 
 }
 
 function clickedPass() {
     currentCat.passed()
-    getNewCat()
+    renderStamp()
+    // getNewCat()
 }
 
 // ⬇️ HELPER FUNCTIONS ⬇️
 
+// get new cat to render or call end screen if no more cats
 function getNewCat() {
     if (catIndex + 1 === cats.length) {
         setTimeout(renderEnd, 1500)
@@ -45,15 +48,16 @@ function getNewCat() {
 
 // ⬇️ RENDER THE APP ⬇️
 
+// show end screen when there are no more cats
 function renderEnd() {
     const header = document.getElementById("header")
     const footer = document.getElementById("footer")
-    catSection.innerHTML = ""
-    catSection.style.backgroundImage = `url(/images/end.jpg)`
-    catSection.style.backgroundColor = "white"
 
     header.innerHTML = ""
     footer.innerHTML = ""
+    catSection.innerHTML = ""
+    catSection.style.backgroundImage = `url(/images/end.jpg)`
+    catSection.style.backgroundColor = "white"
 
     catSection.innerHTML += `
         <div class="no-cats">
@@ -62,6 +66,16 @@ function renderEnd() {
     `
 }
 
+// show the LIKE or NOPE stamp
+function renderStamp(stamp) {
+    catSection.innerHTML += `
+        <div id="stamp">STAMP</div>
+    `
+
+    setTimeout(getNewCat, 1500)
+}
+
+// render the current cat
 function renderCat(catData) {
     catSection.innerHTML = ""
     catSection.style.backgroundImage = `url(${catData.avatar})`
@@ -74,6 +88,7 @@ function renderCat(catData) {
     `
 }
 
+// render the first non-swiped cat to start app
 function renderApp() {
     if (!currentCat.hasBeenSwiped) {
         renderCat(currentCat)
@@ -82,8 +97,8 @@ function renderApp() {
 
 // render the splash page and then load the app
 function renderSplashPage() {
-    catSection.innerHTML = ""
     let randomNumber = Math.floor(Math.random() * 9) + 1
+    catSection.innerHTML = ""
 
     catSection.innerHTML += `
         <div id="splash">
