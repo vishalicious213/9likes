@@ -94,7 +94,7 @@ function renderCat(catData) {
 
     catSection.innerHTML += `
         <div class="cat-profile">
-            <h2>${catData.name}, ${catData.age}</h2>
+            <h2>${catData.name} (${catData.breed}), ${catData.age}</h2>
             <p>${catData.bio}</p>
         </div>
     `
