@@ -39,11 +39,22 @@ function getNewCat() {
     console.log(catIndex + 1, cats.length)
     if (catIndex + 1 === cats.length) {
         console.log("END OF CATS")
+        setTimeout(renderEnd, 1500)
     } else {
         catIndex ++
         currentCat = new Cat(cats[catIndex])
         renderCat(currentCat)
     }
+}
+
+function renderEnd() {
+    catSection.innerHTML = ""
+
+    catSection.innerHTML += `
+        <div class="no-cats">
+            <img src="/images/end.jpg">
+        </div>
+    `
 }
 
 function renderCat(catData) {

@@ -45,7 +45,7 @@ header {
     align-items: end;
 }
 
-#splash {
+#splash, .no-cats {
     height: 100%;
     width: 100%;
     display: flex;
@@ -73,6 +73,10 @@ header {
 .cat-profile p {
     color: #B7B7B7;
     margin: 0;
+}
+
+.no-cats img {
+    width: 100%;
 }
 
 /* FOOTER */
