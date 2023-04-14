@@ -4,6 +4,10 @@ This is my implementation of the Scrimba solo project for Module 7 of the Fronte
 
 Deployed at: https://vish213-9likes.netlify.app
 
+Original design from Scrimba:
+
+![](/images/scrimba-design.jpg)
+
 ## Customizations
 
 - Added splash screen that cycles through 9 app logo images
