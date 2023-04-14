@@ -95,6 +95,8 @@ header {
 
 #stamp img {
     width: 50%;
+    margin-top: 2rem;
+    transform: rotate(-25deg);
 }
 
 /* FOOTER */
