@@ -9,23 +9,21 @@ console.log(currentCat)
 
 // ⬇️ RENDER THE APP ⬇️
 
-function renderCat(index) {
+function renderCat(catData) {
     catSection.innerHTML = ""
-    catSection.style.backgroundImage = `url(${cats[index].avatar})`
+    catSection.style.backgroundImage = `url(${catData.avatar})`
 
     catSection.innerHTML += `
         <div class="cat-profile">
-            <h2>${cats[index].name}, ${cats[index].age}</h2>
-            <p>${cats[index].bio}</p>
+            <h2>${catData.name}, ${catData.age}</h2>
+            <p>${catData.bio}</p>
         </div>
     `
 }
 
 function renderApp() {
-    for (let i = 0; i < cats.length; i++) {
-        if (cats[i].hasBeenSwiped === false) {
-            renderCat(i)
-        }
+    if (!currentCat.hasBeenSwiped) {
+        renderCat(currentCat)
     }
 }
 
