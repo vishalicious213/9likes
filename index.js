@@ -10,15 +10,25 @@ let currentCat = new Cat(cats[catIndex])
 
 console.log(currentCat)
 
-// ⬇️ USER INTERFACE / EVENT LISTENERS ⬇️
+// ⬇️ EVENT LISTENERS ⬇️
 
 like.addEventListener("click", function() {
-    console.log("liked", currentCat.name)
+    clickedLike()
 })
 
 pass.addEventListener("click", function() {
-    console.log("passed", currentCat.name)
+    clickedPass()
 })
+
+// ⬇️ EVENT HANDLERS ⬇️
+
+function clickedLike() {
+    console.log("liked", currentCat.name)
+}
+
+function clickedPass() {
+    console.log("passed", currentCat.name)
+}
 
 // ⬇️ RENDER THE APP ⬇️
 
