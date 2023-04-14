@@ -22,14 +22,14 @@ pass.addEventListener("click", function() {
 
 function clickedLike() {
     currentCat.liked()
-    renderStamp()
+    renderStamp(1)
     // getNewCat()
 
 }
 
 function clickedPass() {
     currentCat.passed()
-    renderStamp()
+    renderStamp(0)
     // getNewCat()
 }
 
@@ -68,9 +68,17 @@ function renderEnd() {
 
 // show the LIKE or NOPE stamp
 function renderStamp(stamp) {
-    catSection.innerHTML += `
-        <div id="stamp">STAMP</div>
-    `
+    if (stamp === 1) {
+        catSection.innerHTML += `
+            <div id="stamp">LIKED</div>
+        `
+    }
+
+    if (stamp === 0) {
+        catSection.innerHTML += `
+            <div id="stamp">PASSED</div>
+        `
+    }
 
     setTimeout(getNewCat, 1500)
 }
