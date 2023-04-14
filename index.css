@@ -97,10 +97,10 @@ footer {
     width: 100%;
 }
 
-.cross:hover {
+#cross:hover {
     background: #FFE7EF;
 }
 
-.heart:hover {
+#heart:hover {
     background: #DBFFF4;
 }

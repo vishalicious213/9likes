@@ -25,6 +25,10 @@ function renderApp() {
     if (!currentCat.hasBeenSwiped) {
         renderCat(currentCat)
     }
+
+    if (catIndex > cats.length) {
+        console.log("END OF CATS")
+    }
 }
 
 // render the splash page and then load the app
