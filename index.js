@@ -23,13 +23,13 @@ pass.addEventListener("click", function() {
 // ⬇️ EVENT HANDLERS ⬇️
 
 function clickedLike() {
-    // console.log("liked", currentCat.name)
     currentCat.liked()
+    console.log(currentCat)
 }
 
 function clickedPass() {
-    // console.log("passed", currentCat.name)
     currentCat.passed()
+    console.log(currentCat)
 }
 
 // ⬇️ RENDER THE APP ⬇️
