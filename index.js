@@ -50,6 +50,7 @@ function renderEnd() {
     const header = document.getElementById("header")
     const footer = document.getElementById("footer")
     catSection.innerHTML = ""
+    catSection.style.backgroundImage = `url(/images/end.jpg)`
     catSection.style.backgroundColor = "white"
 
     header.innerHTML = ""
@@ -57,7 +58,7 @@ function renderEnd() {
 
     catSection.innerHTML += `
         <div class="no-cats">
-            <img src="/images/end.jpg">
+            NO MORE CATS!
         </div>
     `
 }
