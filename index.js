@@ -2,6 +2,9 @@ import cats from "./data.js"
 import Cat from "./cat.js"
 
 const catSection = document.getElementById("cat")
+const like = document.getElementById("heart")
+const pass = document.getElementById("cross")
+
 let catIndex = 0
 let currentCat = new Cat(cats[catIndex])
 
