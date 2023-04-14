@@ -8,8 +8,6 @@ const pass = document.getElementById("cross")
 let catIndex = 0
 let currentCat = new Cat(cats[catIndex])
 
-console.log(currentCat)
-
 // ⬇️ EVENT LISTENERS ⬇️
 
 like.addEventListener("click", function() {
@@ -25,22 +23,27 @@ pass.addEventListener("click", function() {
 function clickedLike() {
     currentCat.liked()
     console.log(currentCat)
-    catIndex ++
-    getCurrentCat()
+    getNewCat()
+
 }
 
 function clickedPass() {
     currentCat.passed()
     console.log(currentCat)
-    catIndex ++
-    getCurrentCat()
+    getNewCat()
 }
 
 // ⬇️ RENDER THE APP ⬇️
 
-function getCurrentCat() {
-    currentCat = new Cat(cats[catIndex])
-    renderCat(currentCat)
+function getNewCat() {
+    console.log(catIndex + 1, cats.length)
+    if (catIndex + 1 === cats.length) {
+        console.log("END OF CATS")
+    } else {
+        catIndex ++
+        currentCat = new Cat(cats[catIndex])
+        renderCat(currentCat)
+    }
 }
 
 function renderCat(catData) {
@@ -60,9 +63,9 @@ function renderApp() {
         renderCat(currentCat)
     }
 
-    if (catIndex > cats.length) {
-        console.log("END OF CATS")
-    }
+    // if (catIndex > cats.length) {
+    //     console.log("END OF CATS")
+    // }
 }
 
 // render the splash page and then load the app
