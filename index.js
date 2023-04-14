@@ -2,6 +2,10 @@ import cats from "./data.js"
 import Cat from "./cat.js"
 
 const catSection = document.getElementById("cat")
+let catIndex = 0
+let currentCat = new Cat(cats[catIndex])
+
+console.log(currentCat)
 
 // ⬇️ RENDER THE APP ⬇️
 
@@ -17,6 +21,15 @@ function renderCat(index) {
     `
 }
 
+function renderApp() {
+    for (let i = 0; i < cats.length; i++) {
+        if (cats[i].hasBeenSwiped === false) {
+            renderCat(i)
+        }
+    }
+}
+
+// render the splash page and then load the app
 function renderSplashPage() {
     catSection.innerHTML = ""
     let randomNumber = Math.floor(Math.random() * 9) + 1
@@ -29,15 +42,5 @@ function renderSplashPage() {
 
     setTimeout(renderApp, 1500)
 }
-
-function renderApp() {
-    for (let i = 0; i < cats.length; i++) {
-        if (cats[i].hasBeenSwiped === false) {
-            renderCat(i)
-        }
-    }
-}
-
-// renderApp()
 
 renderSplashPage()
