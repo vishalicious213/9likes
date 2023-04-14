@@ -43,6 +43,7 @@ header {
     background-position: center;
     display: flex;
     align-items: end;
+    position: relative;
 }
 
 #splash, .no-cats {
@@ -82,6 +83,14 @@ header {
     text-shadow: 0 0 2px black;
     margin-bottom: 5rem;
     text-align: center;
+}
+
+#stamp {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 100%;
+    display: flex;
 }
 
 /* FOOTER */
