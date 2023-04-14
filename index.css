@@ -10,7 +10,7 @@ body {
 
 /* HEADER */
 
-header {
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,9 +101,10 @@ header {
 
 /* FOOTER */
 
-footer {
+#footer {
     display: flex;
     justify-content: center;
+    margin-top: .5rem;
 }
 
 .footer-icon {
