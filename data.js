@@ -1,5 +1,14 @@
 const cats = [
     {
+        name: "Fluffy & Noodle",
+        avatar: "images/cats/cat-fluffy-and-noodle.jpg",
+        age: 1,
+        breed: "British Shorthair",
+        bio: "Two happy brothers who love napping, deliberately spilling coffee, and play fighting.",
+        hasBeenSwiped: false,
+        hasBeenLiked: false
+    },    
+    {
         name: "Kitty",
         avatar: "images/cats/cat-kitty.jpg",
         age: 5,
