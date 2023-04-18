@@ -1,5 +1,14 @@
 const cats = [
     {
+        name: "Kitty",
+        avatar: "images/cats/cat-kitty.jpg",
+        age: 5,
+        breed: "British Shorthair",
+        bio: "Passionate about purring, cuddles, and ping-pong balls.",
+        hasBeenSwiped: false,
+        hasBeenLiked: false
+    },
+    {
         name: "Mika",
         avatar: "images/cats/cat-mika.jpg",
         age: 5,
