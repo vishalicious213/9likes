@@ -18,6 +18,15 @@ const cats = [
         hasBeenLiked: false
     },
     {
+        name: "Pumpkin",
+        avatar: "images/cats/cat-pumpkin.jpg",
+        age: 5,
+        breed: "British Shorthair",
+        bio: "Scrimba Team Mascot and live stream star. Fond of the washing basket and window sills.",
+        hasBeenSwiped: false,
+        hasBeenLiked: false
+    },
+    {
         name: "Zdana",
         avatar: "images/cats/cat-zdana.jpg",
         age: 7,
