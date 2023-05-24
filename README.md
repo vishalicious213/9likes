@@ -8,6 +8,10 @@ Original design from Scrimba:
 
 ![](/images/scrimba-design.jpg)
 
+My implementation:
+
+![](/images/screenshot.jpg)
+
 ## Customizations
 
 - Added splash screen that cycles through 9 app logo images
